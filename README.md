@@ -11,6 +11,21 @@ LSA64 Sign Language Dataset
 - Frame sampling used for temporal processing
 
 ## Method
+## Architecture
+
+The system follows a video classification pipeline:
+
+Video Input  
+↓  
+Frame Sampling (8 RGB Frames)  
+↓  
+DINOv2 Vision Transformer Feature Extractor  
+↓  
+Temporal Average Pooling  
+↓  
+Fully Connected Classification Head  
+↓  
+Predicted Gloss Label
 
 Pipeline:
 
